@@ -24,11 +24,44 @@
         </div>
     </nav>
     
-    
+    <div class="container mt-4">
+        <h2>Réservé chez-nous</h2>
+        <p>Remplissez le formulaire ci-dessous pour réserver une table chez Saumon et Ronron.</p>
+        
+        <form onsubmit="event.preventDefault(); alert('Votre demande de réservation a bien était prise en compte.');">
+            <div class="mb-3">
+                <label for="nom" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="nom" placeholder="Votre nom" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Votre email" required>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="date" class="form-label">Date</label>
+                    <input type="date" class="form-control" id="date" required min="<?php echo date('Y-m-d'); ?>">
+                </div>
+                <div class="col-md-6">
+                    <label for="personnes" class="form-label">Nombre de personnes</label>
+                    <input type="number" class="form-control" id="personnes" placeholder="Nombre de personnes" min="1" required>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Un message à nous transmettre</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="(Allergies,...)"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
+    </div>
+
     <footer class="text-white text-center p-3 mt-4">
         <p>Contactez-nous au 01 23 45 67 89 pour tout renseignement supplémentaire.</p>
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('date').min = new Date().toISOString().split('T')[0];
+    </script>
 </body>
 </html>
