@@ -38,13 +38,17 @@
                 <input type="email" class="form-control" id="email" placeholder="Votre email" required>
             </div>
             <div class="row mb-3">
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <label for="date" class="form-label">Date</label>
-                    <input type="date" class="form-control" id="date" required min="<?php echo date('Y-m-d'); ?>">
+                    <input type="date" class="form-control" id="date" required>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <label for="personnes" class="form-label">Nombre de personnes</label>
                     <input type="number" class="form-control" id="personnes" placeholder="Nombre de personnes" min="1" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="telephone" class="form-label">Téléphone</label>
+                    <input type="tel" class="form-control" id="telephone" placeholder="Votre numéro de téléphone" required>
                 </div>
             </div>
             <div class="mb-3">
