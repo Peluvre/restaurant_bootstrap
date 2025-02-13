@@ -17,8 +17,9 @@ footer{
 }
 
 .banner {
-    background: url('restaurant.jpg') no-repeat center center;
+    background-image: url('../img/chats.jpg');
     background-size: cover;
+    flex-direction: column;
     height: 300px;
     display: flex;
     align-items: center;
@@ -26,6 +27,13 @@ footer{
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
     font-size: 2rem;
+}
+
+.slogan {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
 }
 
 .card img {
