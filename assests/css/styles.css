@@ -5,11 +5,11 @@ body {
 }
 
 nav{
-    background-image: linear-gradient(rgba(250, 128, 114, 1), rgba(250, 128, 114, 0.1));
+    background-image: linear-gradient(rgba(250, 128, 114, 1), rgba(250, 128, 114, 0));
 }
 
 footer{
-    background-image: linear-gradient(rgba(250, 128, 114, 0.1), rgba(250, 128, 114, 1));
+    background-image: linear-gradient(rgba(250, 128, 114, 0), rgba(250, 128, 114, 1));
 }
 
 .navbar-brand{
